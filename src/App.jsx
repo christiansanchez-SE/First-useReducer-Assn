@@ -21,7 +21,7 @@ const reducer = (state, action) => {
         // Within the map function we are checking if the id of the current todo item matches the id of specified in the action
         if (todo.id === action.id) {
 
-          // If the id matches its creating a new object using the spread operator ('...todo') to copy all properties of the todo item
+          // If the id matches its creating a new object using the spread operator ('...todo') to copy all properties of the todo item [it copies the original element and unpacks the properties]
               // Then itll toggle the complete property to its opposite value ('!todo.complete')
                   // This toggles the completion status of the todo item
           return { ...todo, complete: !todo.complete };
@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="app">
 
-      {/* Map is being used to iterate iver the todos array
+      {/* Map is being used to iterate over the todos array
           For each todo item, its returning a JSX element */}
       {todos.map((todo) => (
 
@@ -76,6 +76,7 @@ function App() {
           </label>
         </div>
       ))}
+      
     </div>
   );
 }
