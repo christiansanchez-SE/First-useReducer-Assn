@@ -1,0 +1,27 @@
+.app{
+  border: solid black;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+.input{
+  border: solid dodgerblue;
+  height: 25vh;
+  width: 25vw;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox{
+  border: solid  1px red;
+  display: flex;
+  align-items: center;
+}
